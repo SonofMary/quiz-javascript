@@ -85,6 +85,7 @@ function startQuiz () {
     quizBox.appendChild(questiondiv)
     quizBox.appendChild(answerdiv)
     quizBox.appendChild(submitButton)
+    
 }
 
 startQuiz()
@@ -161,8 +162,11 @@ function retry () {
     currentQuestionBankIndex = 0
     score = 0
     incorrectAnswers = []
-    quizBox.innerHTML = ""
+    // quizBox.innerHTML = ""
+    submitButton.style.display = "block"
+    
     startQuiz()
+    
 
 }
 
